@@ -1,0 +1,9 @@
+*~
+*.pyc
+*.svg
+__pycache__/
+*.gp
+\#*\#
+*.csv
+gitsuperlog.egg-info/
+misc/
