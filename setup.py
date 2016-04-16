@@ -31,7 +31,7 @@ setup(
 
     entry_points={
         "console_scripts": [
-            "git-superlog=git_superlog.git_superlog:__main__",
+            "git-superlog=git_superlog.main:__main__",
         ],
     },
 )

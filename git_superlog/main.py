@@ -7,7 +7,7 @@ from itertools import accumulate
 import argparse
 import logging
 from git_superlog import helper
-from defaults import EMPTY_TREE_SHA
+from git_superlog.defaults import EMPTY_TREE_SHA
 
 import git
 from git.compat import (defenc, PY3)
