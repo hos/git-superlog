@@ -5,7 +5,7 @@ here = path.abspath(path.dirname(__file__))
 
 
 setup(
-    name="gitsuperlog",
+    name="git_superlog",
 
     version="0.0",
 
@@ -31,8 +31,7 @@ setup(
 
     entry_points={
         "console_scripts": [
-            "gitsuperlog=gitsuperlog.gitsuperlog:__main__",
+            "git-superlog=git_superlog.git_superlog:__main__",
         ],
     },
 )
-
