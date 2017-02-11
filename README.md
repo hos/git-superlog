@@ -12,7 +12,7 @@ A more advanced git log
 
     $ git-superlog -h
 
-    usage: main.py [-h] [-u UNWANTED_EXTENSIONS] [-o OUTPUT] repo_path
+    usage: git-superlog [-h] [-u UNWANTED_EXTENSIONS] [-o OUTPUT] repo_path
 
     positional arguments:
       repo_path             Path to the repository

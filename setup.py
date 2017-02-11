@@ -27,6 +27,7 @@ setup(
     # data_files=[("my_data")],
 
     install_requires={
+        "GitPython",
     },
 
     entry_points={

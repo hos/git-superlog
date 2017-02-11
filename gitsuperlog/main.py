@@ -100,11 +100,15 @@ def __main__():
             if k.renamed:
                 logging.debug("RENAMED: %s  ->  %s" % (k.b_path, k.a_path))
                 continue
-            a_ext = os.path.splitext(k.a_path)[1]
-            b_ext = os.path.splitext(k.b_path)[1]
 
-            if (a_ext in unwantedExtensions) or (b_ext in unwantedExtensions):
-                continue
+            if k.a_path:
+                a_ext = os.path.splitext(k.a_path)[1]
+                if a_ext in unwantedExtensions:
+                    continue
+            if k.b_path:
+                b_ext = os.path.splitext(k.b_path)[1]
+                if b_ext in unwantedExtensions:
+                    continue
 
             try:
                 msg = k.diff.decode(defenc)
